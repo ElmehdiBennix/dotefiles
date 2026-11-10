@@ -2,7 +2,7 @@ binds {
 
     // --- Dynamic Slot 1 (Mod + A) ---
     Mod+A {
-        spawn "sh" "-c" "niri-scratchpad create 1 --as-float && if niri msg -j focused-window | grep -Eq '\"is_floating\"[[:space:]]*:[[:space:]]*true'; then niri msg action set-column-width 1920 && niri msg action set-window-height 1080; fi"
+        spawn "sh" "-c" "niri-scratchpad create 1 --as-float"
     }
     Mod+Shift+A {
         spawn "sh" "-c" "niri-scratchpad delete 1 && niri msg action toggle-window-floating"
@@ -10,7 +10,7 @@ binds {
 
     // --- Dynamic Slot 2 (Mod + S) ---
     Mod+S {
-        spawn "sh" "-c" "niri-scratchpad create 2 --as-float && if niri msg -j focused-window | grep -Eq '\"is_floating\"[[:space:]]*:[[:space:]]*true'; then niri msg action set-column-width 1920 && niri msg action set-window-height 1080; fi"
+        spawn "sh" "-c" "niri-scratchpad create 2 --as-float"
     }
     Mod+Shift+S {
         spawn "sh" "-c" "niri-scratchpad delete 2 && niri msg action toggle-window-floating"
@@ -18,7 +18,7 @@ binds {
 
     // --- Dynamic Slot 3 (Mod + D) ---
     Mod+D {
-        spawn "sh" "-c" "niri-scratchpad create 3 --as-float && if niri msg -j focused-window | grep -Eq '\"is_floating\"[[:space:]]*:[[:space:]]*true'; then niri msg action set-column-width 1920 && niri msg action set-window-height 1080; fi"
+        spawn "sh" "-c" "niri-scratchpad create 3 --as-float"
     }
     Mod+Shift+D {
         spawn "sh" "-c" "niri-scratchpad delete 3 && niri msg action toggle-window-floating"

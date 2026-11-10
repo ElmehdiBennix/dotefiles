@@ -4,6 +4,17 @@
 
         background-color "transparent" // <- needed for noctalia-shell to set wallpaper
 
+        border {
+            off  // Make sure this is NOT set to "off" if you want borders
+            // width 3  // Change this number to your preferred border thickness
+        }
+
+        // Alternatively, if you prefer using a focus-ring instead of a permanent border:
+        focus-ring {
+            // off
+            width 2
+        }
+
         preset-column-widths {
             proportion 0.33333
             proportion 0.5

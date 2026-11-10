@@ -2,6 +2,30 @@
   // ##########################################################
   // THEME & APPEARANCE
   // ##########################################################
+  "ssh_connections": [
+    {
+      "host": "192.168.1.4",
+      "username": "rambeau",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/etc"
+          ]
+        },
+        {
+          "paths": [
+            "/etc/nixos"
+          ]
+        },
+        {
+          "paths": [
+            "/home/rambeau"
+          ]
+        }
+      ]
+    }
+  ],
   "show_edit_predictions": false,
   "auto_update": false,
   "edit_predictions": {

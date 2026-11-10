@@ -28,6 +28,8 @@ adw-gtk-theme f
 
 xorg-xhost
 proton-vpn-gtk-app
+tailscale
+logseq
 
 | timer and clock and add desktop enty for windows reboot
 
@@ -62,12 +64,7 @@ cloudflared
 # =============================================================================
 
 
-hypridle                     # Idle management daemon
-hyprshot                     # Screenshot utility
-hyprpicker                   # Wayland color picker
-hyprsunset                   # Blue light filter and temperature control
 
-satty                        # screen shot edditing
 tesseract
 tesseract-data-eng           # OCR tool to extract text from screen selection
 wl-clipboard                 # Command-line copy/paste utilities
