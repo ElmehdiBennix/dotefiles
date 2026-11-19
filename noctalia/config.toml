@@ -1,0 +1,452 @@
+[accessibility]
+ui_scale = 0.95000000670552254
+
+[bar]
+order = [ "main" ]
+
+    [bar.main]
+    background_opacity = 0.54999998770654202
+    center = [ "tray", "taskbar", "group:g4" ]
+    end = [ "group:g2", "group:g1", "group:g3" ]
+    font_family = "JetBrainsMono Nerd Font Propo"
+    font_scale = 0.84999998845160007
+    margin_ends = 400
+    scale = 0.95000000670552254
+    start = [ "toggle", "nextboot-selector", "group:g8", "group:g5", "group:g7", "group:g9", "status" ]
+
+        [[bar.main.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g5"
+        members = [ "bar", "rules" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.main.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g7"
+        members = [ "topgrade-wrapper" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.main.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g8"
+        members = [ "widget" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.main.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g9"
+        members = [ "bar_2", "status_3", "bar_3", "status_2" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.main.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "clock", "weather" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.main.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g2"
+        members = [ "network", "bluetooth", "volume" ]
+        opacity = 0.0
+        padding = 6.0
+
+        [[bar.main.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g3"
+        members = [ "privacy", "battery" ]
+        opacity = 0.0
+        padding = 6.0
+
+        [[bar.main.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g4"
+        members = [ "media", "audio_visualizer", "notifications" ]
+        opacity = 1.0
+        padding = 6.0
+
+[bluetooth]
+connect_when_enabled = true
+connection_notifications = true
+
+[brightness]
+enable_ddcutil = true
+
+[control_center]
+sidebar_section = "none"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "wallpaper"
+
+    [[control_center.shortcuts]]
+    type = "dark_mode"
+
+    [[control_center.shortcuts]]
+    type = "weather"
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+active_monitor_only = true
+background_opacity = 0.54999998770654202
+cross_axis_padding = 0
+icon_size = 40
+launcher_icon = "zoom"
+launcher_position = "end"
+main_axis_padding = 6
+position = "left"
+radius = 80
+reserve_space = false
+
+[location]
+address = "Angouleme"
+
+[lockscreen]
+transition = [ "disc", "fade", "stripes", "wipe", "zoom" ]
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@DP-3",
+    "lockscreen-widget-0000000000000007",
+    "lockscreen-widget-000000000000000b",
+    "lockscreen-widget-000000000000000c",
+    "lockscreen-widget-000000000000000d"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 24
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1720.0
+    cy = 1198.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = true
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = false
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000007]
+    box_height = 192.0
+    box_width = 192.0
+    cx = 1720.0
+    cy = 336.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000007.settings]
+        background = false
+        background_color = "surface"
+        background_opacity = 0.80000000000000004
+        background_padding = 10
+        background_radius = 12
+        center_text = true
+        circle = true
+        clock_style = "digital"
+        color = "primary"
+        font_family = ""
+        format = "{:%H}"
+        shadow = true
+        show_seconds = true
+        timezone = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000b]
+    box_height = 216.0
+    box_width = 192.0
+    cx = 1720.0
+    cy = 492.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-000000000000000b.settings]
+        background = false
+        format = "{:%M}"
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000c]
+    box_height = 336.0
+    box_width = 192.0
+    cx = 2296.0
+    cy = 1128.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "media_player"
+
+        [lockscreen_widgets.widget.lockscreen-widget-000000000000000c.settings]
+        album_art_background = true
+        album_art_blur = 28
+        audio_visualizer = true
+        background = true
+        background_color = "surface"
+        background_opacity = 0.80000000000000004
+        background_padding = 16
+        background_radius = 12
+        color = "on_surface"
+        font_family = ""
+        hide_when_no_media = false
+        layout = "vertical"
+        shadow = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000d]
+    box_height = 384.0
+    box_width = 600.0
+    cx = 1744.0
+    cy = 864.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "calendar"
+
+[nightlight]
+enabled = true
+
+[osd]
+position = "bottom_center"
+position_vertical = "bottom_center"
+
+[plugins]
+auto_update = "all"
+enabled = [
+    "0lucasmatheus/awwwall",
+    "aristides/udiskie",
+    "nightwatch75/topgrade-wrapper",
+    "rylos/syncthing",
+    "alexander/screen-toolkit",
+    "icefish/phone-connect",
+    "icefish/phone-operate",
+    "davemhammer/tailscale"
+]
+
+[shell]
+button_borders = false
+external_ip_enabled = true
+font_family = "JetBrainsMono Nerd Font Propo"
+input_borders = false
+popup_borders = false
+settings_expand_all_groups = true
+
+    [shell.launcher]
+    default_view = "all"
+
+        [shell.launcher.providers.emoji]
+        global = true
+
+        [shell.launcher.providers.panels]
+        global = false
+
+    [shell.screen_corners]
+    enabled = true
+    size = 100
+
+[theme]
+builtin = "Ayu"
+community_palette = "ADW"
+custom_palette = "by8l7py4e0dg1-mc"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "ghostty", "kcolorscheme", "niri", "qt" ]
+    community_ids = [ "opencode", "vicinae" ]
+
+[wallpaper]
+directory = "/home/rambeau/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/rambeau/Pictures/Wallpapers/japanStreet.png"
+
+    [wallpaper.last]
+    path = "/home/rambeau/Pictures/Wallpapers/japanStreet.png"
+
+    [wallpaper.monitors.DP-3]
+    path = "/home/rambeau/Pictures/Wallpapers/japanStreet.png"
+
+[widget.audio_visualizer]
+bands = 10
+capsule = false
+interactive = false
+mirrored = false
+reversed = true
+scale = 1.1500000000000001
+width = 70
+
+[widget.bar]
+type = "raycursive/niri-displays:bar"
+
+[widget.bar_2]
+type = "icefish/phone-connect:bar"
+
+[widget.bar_3]
+type = "rylos/syncthing:bar"
+
+[widget.brightness]
+font_scale = 0.96000000000000008
+
+[widget.clock]
+format = "{:%H:%M | %a %b %d} |"
+
+[widget.media]
+art_size = 18
+capsule = false
+hide_artist = true
+hide_when_idle = true
+hide_when_no_media = true
+interactive = false
+max_length = 140
+rotate_album_art = true
+show_progress = true
+title_scroll = "always"
+
+[widget.network]
+show_label = false
+
+[widget.nextboot-selector]
+type = "avivbintangaringga/nextboot-selector:nextboot-selector"
+
+[widget.notifications]
+capsule = true
+capsule_radius = "auto"
+
+[widget.rules]
+type = "setyvii/niri-rules-studio:rules"
+
+[widget.status]
+type = "aristides/udiskie:status"
+
+[widget.status_2]
+type = "davemhammer/tailscale:status"
+
+[widget.status_3]
+type = "icefish/phone-operate:status"
+
+[widget.taskbar]
+anchor = true
+capsule = true
+capsule_border_width = 0.0
+capsule_opacity = 0.0
+capsule_padding = 0
+capsule_radius = 4
+group_by_workspace = true
+hide_empty_workspaces = true
+icon_scale = 1.2000000000000002
+inactive_opacity = 0.55000000000000004
+show_active_indicator = false
+show_workspace_label = false
+workspace_group_active_border_color = "secondary"
+workspace_group_inactive_border_color = "on_secondary"
+workspace_label_placement = "inside"
+
+[widget.toggle]
+type = "0lucasmatheus/awwwall:toggle"
+
+[widget.topgrade-wrapper]
+type = "nightwatch75/topgrade-wrapper:topgrade-wrapper"
+
+[widget.tray]
+capsule = true
+capsule_radius = "auto"
+drawer = true
+
+[widget.volume]
+show_label = false
+
+[widget.weather]
+show_condition = false
+
+[widget.widget]
+type = "alexander/screen-toolkit:widget"
+
+[widget.workspaces]
+anchor = true
+hide_when_empty = true
+label_source = "name"
+labels_only_when_occupied = true
+pill_scale = 0.90000000000000002
+style = "focus_hint"
